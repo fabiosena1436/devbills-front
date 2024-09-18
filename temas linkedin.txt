@@ -1,0 +1,19 @@
+
+usando vite para o projeto 
+
+https://vitejs.dev/guide/
+
+Redix 
+
+https://www.radix-ui.com/primitives/docs/overview/introduction
+
+
+biblioteca de graficos nivo 
+
+https://nivo.rocks/pie/
+
+
+impotraçoes de configuraçoes do eslint e pritter
+
+npm i -D prettier eslint-config-prettier eslint-plugin-prettier eslint-plugin-import-helpers
+
