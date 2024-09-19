@@ -1,40 +1,43 @@
-// eslint.config.js
-import { defineConfig } from 'eslint';
-
-export default defineConfig({
-  root: true,
-  env: {
-    browser: true,
-    es2020: true,
+{
+  "root": true,
+  "env": {
+    "browser": true,
+    "es2020": true
   },
-  extends: [
-    'eslint:recommended',
-    'plugin:@typescript-eslint/recommended',
-    'plugin:react-hooks/recommended',
-    'plugin:prettier/recommended',
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:prettier/recommended"
   ],
-  ignorePatterns: ['dist'],
-  parser: '@typescript-eslint/parser',
-  plugins: [
-    'react-refresh',
-    'prettier',
-    'eslint-plugin-import-helpers',
+  "ignorePatterns": [
+    "dist"
   ],
-  rules: {
-    'import-helpers/order-imports': [
-      'warn',
+  "parser": "@typescript-eslint/parser",
+  "plugins": [
+    "react-refresh",
+    "prettier",
+    "eslint-plugin-import-helpers"
+  ],
+  "rules": {
+    "import-helpers/order-imports": [
+      "warn",
       {
-        newlinesBetween: 'always',
-        groups: [
-          '/^node:*/',
-          'module',
-          ['parent', 'sibling', 'index'],
+        "newlinesBetween": "always",
+        "groups": [
+          "/^node:*/",
+          "module",
+          [
+            "parent",
+            "sibling",
+            "index"
+          ]
         ],
-        alphabetize: {
-          order: 'asc',
-          ignoreCase: true,
-        },
-      },
-    ],
-  },
-});
+        "alphabetize": {
+          "order": "asc",
+          "ignoreCase": true
+        }
+      }
+    ]
+  }
+}
