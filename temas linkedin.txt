@@ -23,6 +23,10 @@ unsano o styled-components para usar a estilizaçao
  npm i styled-components  
 
 
+
+ falando sobre o botoes usando o import { ComponentProps } from "react"
+
+
 {
   "root": true,
   "env": {

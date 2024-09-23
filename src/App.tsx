@@ -1,4 +1,4 @@
-import { Home } from './home/styles'
+import { Home } from './home/index'
 import GlobalStyles from './styles/global'
 
 
