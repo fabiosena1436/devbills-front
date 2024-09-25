@@ -27,6 +27,9 @@ unsano o styled-components para usar a estilizaçao
  falando sobre o botoes usando o import { ComponentProps } from "react"
 
 
+ falando sobre @react-input/mask para imput
+
+
 {
   "root": true,
   "env": {
