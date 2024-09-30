@@ -3,7 +3,7 @@ import { Button } from "../components/button";
 import { Input } from "../components/input";
 import { Logo } from "../components/logo";
 import { Title } from "../components/title";
-import { Balance, Filters, Header, InputGroup, Main, Section } from "./styles";
+import { Aside, Balance, ChartAction, ChartContainer, ChartContent, Filters, Header, InputGroup, Main, Section } from "./styles";
 import { ButtonIcon } from "../components/button-icon";
 import { Card } from "../components/card";
 
@@ -47,7 +47,43 @@ export function Home() {
                         <Card title="Saldo" amount={1000000} variant="incomes" />
                         <Card title="Saldo" amount={1000000} variant="expenses" />
                     </Balance>
+                    <ChartContainer>
+                        <header>
+                            <Title title="Gastos" subtitle="Despesas por categoria no periodo" />
+
+                        </header>
+                        <ChartContent />
+                    </ChartContainer>
+                    <ChartContainer>
+                        <header>
+                            <Title title="Evolução financeira"
+                                subtitle="Saldo, Receitas e Gastos no ano"
+                            />
+                            <ChartAction>
+                                <InputMask
+                                    component={Input}
+                                    mask="aaaa"
+                                    replacement={{ a: /\d/, }}
+                                    variant="black"
+                                    label="Ano"
+                                    placeholder="aaaa"
+                                />
+                                <ButtonIcon />
+                            </ChartAction>
+                        </header>
+                        <ChartContent />
+                    </ChartContainer>
                 </Section>
+                <Aside>
+                    <header>
+                        <Title title="Transações" subtitle="Receitas e Gsatos no periodo" />
+                        <Input
+                            variant="black"
+                            placeholder="Procurar transação"
+                        />
+                        <ButtonIcon />
+                    </header>
+                </Aside>
             </Main>
         </>
 
