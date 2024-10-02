@@ -29,6 +29,8 @@ unsano o styled-components para usar a estilizaçao
 
  falando sobre @react-input/mask para imput
 
+ falando sobre a biblioteca de modal usando a radix com dialog
+
 
 {
   "root": true,

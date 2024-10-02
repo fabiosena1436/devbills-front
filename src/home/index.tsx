@@ -3,10 +3,11 @@ import { Button } from "../components/button";
 import { Input } from "../components/input";
 import { Logo } from "../components/logo";
 import { Title } from "../components/title";
-import { Aside, Balance, ChartAction, ChartContainer, ChartContent, Filters, Header, InputGroup, Main, SearchTransaction, Section } from "./styles";
+import { Aside, Balance, ChartAction, ChartContainer, ChartContent, Filters, Header, InputGroup, Main, SearchTransaction, Section, TransactionGroup } from "./styles";
 import { ButtonIcon } from "../components/button-icon";
 import { Card } from "../components/card";
 import { Transaction } from "../components/transaction";
+import { Dialog } from "../components/dialog";
 
 export function Home() {
     return (
@@ -14,7 +15,8 @@ export function Home() {
             <Header>
                 <Logo />
                 <div>
-                    <Button> Nova transação </Button >
+                    <Dialog trigger={<Button> Nova transação </Button >}>Ola</Dialog>
+                   
                     <Button> Nova categoria </Button >
                 </div>
             </Header>
@@ -85,6 +87,9 @@ export function Home() {
                             />
                             <ButtonIcon />
                         </SearchTransaction>
+                       
+                    </header>
+                    <TransactionGroup>
                         <Transaction
                             id={1}
                             amount={20000}
@@ -113,7 +118,7 @@ export function Home() {
                             category={{ title: 'Alimentaçao', color:' #ff33bb '}}
                             title="Mercado"
                         />
-                    </header>
+                        </TransactionGroup>
                 </Aside>
             </Main>
         </>
