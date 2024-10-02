@@ -4,9 +4,11 @@ import styled from 'styled-components'
 import { theme } from '../../styles/theme';
 
 export const Root = styled(Dialog.Root)``;
-
 export const Portal = styled(Dialog.Portal)``;
-export const Trigger = styled(Dialog.Trigger)``;
+export const Trigger = styled(Dialog.Trigger)`
+    border: 0;
+    background-color: transparent;
+`;
 
 
 export const Overlay = styled(Dialog.Overlay)`
@@ -40,9 +42,9 @@ export const Content = styled(Dialog.Content)`
     from{
         opacity: 0;
         transform: translate(-50%, -48%) scale(0.96);
-    }
+    } 
     to{
-        opacity: 1;
+        opacity: 0;
         transform: translate(-50%, -50%) scale(1);
     }
 }

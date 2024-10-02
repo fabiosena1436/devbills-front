@@ -1,4 +1,4 @@
-import { Content, Overlay, Portal, Root, Trigger } from "@radix-ui/react-dialog";
+import { Content, Overlay, Portal, Root, Trigger } from "./styles";
 import { ReactNode } from "react";
 
 
